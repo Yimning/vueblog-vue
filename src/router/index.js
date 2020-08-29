@@ -1,0 +1,55 @@
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Login from '../views/Login.vue'
+import Blogs from '../views/Blogs.vue'
+import BlogEdit from '../views/BlogEdit.vue'
+import BlogDetail from '../views/BlogDetail.vue'
+
+Vue.use(VueRouter)
+
+const routes = [
+  {
+    path: '/',
+    name: 'Index',
+    redirect: {name: "Blogs"}  //重定向
+  },
+  {
+    path: '/blogs',
+    name: 'Blogs',
+    component: Blogs
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login
+  },
+  {
+    path: '/blog/add',
+    name: 'BlogAdd',
+    component: BlogEdit,
+    meta: {
+      requireAuth: true    //路由权限，需要在登录之后才可以进行相关操作
+    }
+  },
+  {
+    path: '/blog/:blogId',
+    name: 'BlogDetail',
+    component: BlogDetail
+  },
+  {
+    path: '/blog/:blogId/edit',
+    name: 'BlogEdit',
+    component: BlogEdit,
+    meta: {
+      requireAuth: true
+    }
+  }
+]
+
+const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
+  routes
+})
+
+export default router
