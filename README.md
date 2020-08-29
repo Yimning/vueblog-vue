@@ -1,5 +1,4 @@
-
-请参考 ：https://github.com/MarkerHub/vueblog
+参考 ：https://github.com/MarkerHub/vueblog
 
 # vue-hello
 
