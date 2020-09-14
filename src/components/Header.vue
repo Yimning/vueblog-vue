@@ -24,7 +24,8 @@
 
 /* component 组件 */
 <script>
-  export default {  //使用标签的形式引入
+  export default { 
+     //使用标签的形式引入
     name: "Header",
     data() {
       return {
