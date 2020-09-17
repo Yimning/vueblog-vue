@@ -1,13 +1,13 @@
 <template>
   <div>
-    <Header></Header>
+    <Header></Header> 
 
     <div class="m-content">
 
       <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
         <el-form-item label="标题" prop="title">
           <el-input v-model="ruleForm.title"></el-input>
-        </el-form-item>
+        </el-form-item> 
 
         <el-form-item label="摘要" prop="description">
           <el-input type="textarea" v-model="ruleForm.description"></el-input>
@@ -89,6 +89,7 @@
       }
     },
     created() {
+      //渲染页面-数据请求
       const blogId = this.$route.params.blogId
       console.log(blogId)
       const _this = this

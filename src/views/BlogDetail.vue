@@ -34,6 +34,7 @@
         ownBlog: false   //编辑显示，需要是属于自己的文章才可以编辑
       }
     },
+//数据渲染
     created() {
       const blogId = this.$route.params.blogId
       console.log(blogId)
@@ -49,7 +50,7 @@
         var result = md.render(blog.content)
         _this.blog.content = result
         _this.ownBlog = (blog.userId === _this.$store.getters.getUser.id)  //判断当前id是否是用户登陆后缓存的id
-
+ 
       })
     }
   }
