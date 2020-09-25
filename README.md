@@ -28,7 +28,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
     5个文件  app.vue、main.js - 主视图、配合 main.js 成为 vue 程序的主入口。router.js - 路由程序主入口。store.js - 路由状态管理系统。
     
 
-    registerServiceWorker.js 暂不进行了解。
+    registerServiceWorker.js 暂不进行了解。 
     
 
     介绍完工程文件夹，进入本文主要关注点 - 组件。
