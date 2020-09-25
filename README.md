@@ -38,5 +38,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
     
 
     当前工程文件夹中存在 4 个组件：app.vue + main.js、helloworld.vue、views/home.vue、views/about.vue。
+    
 
     template 标签：4 个组件都有，这是渲染模版，也是组件的核心，细心的读者可以发现这4个 template 中都包含有一个顶层都 div 元素。script 标签：helloworld.vue 和 views/home.vue 中有，也可以用单独的 js 文件描述，比如 main.js。style 标签：app.vue 和 helloworld.vue 中有，提供【组件作用域】的 css 样式，防止团队协同开发导致的 css 样式名冲突。
