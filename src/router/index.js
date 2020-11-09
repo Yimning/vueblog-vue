@@ -28,7 +28,7 @@ const routes = [
     name: 'BlogAdd',
     component: BlogEdit,
     meta: {
-      requireAuth: true    //路由权限，需要在登录之后才可以进行相关操作，否则不给进入
+      requireAuth: true    //路由权限，需要在登录之后才可以进行相关操作
     }
   },
   {
