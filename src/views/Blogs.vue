@@ -53,7 +53,7 @@
           console.log(res)
           _this.blogs = res.data.data.records
           _this.currentPage = res.data.data.current
-          _this.total = res.data.data.total
+          _this.total = res.data.data.total 
           _this.pageSize = res.data.data.size
 
         })

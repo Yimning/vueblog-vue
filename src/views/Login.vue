@@ -71,7 +71,7 @@ export default {
             //获取后台的authorization
             const jwt = res.headers["authorization"];
             const userInfo = res.data.data;
-
+ 
             // 把数据共享出去，存于this.store下
             that.$store.commit("SET_TOKEN", jwt);
             that.$store.commit("SET_USERINFO", userInfo);
