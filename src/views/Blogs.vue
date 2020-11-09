@@ -60,7 +60,6 @@
       }
     },
     created() {
-      
       //数据渲染
       this.page(1)
     }
