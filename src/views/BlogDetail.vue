@@ -43,7 +43,6 @@
         _this.blog.id = blog.id
         _this.blog.title = blog.title
 
-
         var MardownIt = require("markdown-it")
         var md = new MardownIt()
 
